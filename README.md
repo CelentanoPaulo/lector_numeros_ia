@@ -49,3 +49,11 @@ El mayor desafío y logro de este proyecto es la **integración** de ecosistemas
 * **Motor de Deep Learning en Java:** Eclipse DeepLearning4J (DL4J).
 * **Base de Datos:** PostgreSQL.
 * **Desarrollo Frontend:** JavaScript, HTML5 Canvas API, CSS3.
+
+---
+
+##  Documentación del Módulo de IA
+
+Para profundizar en los detalles técnicos de la fase de Ciencia de Datos, el preprocesamiento del dataset MNIST, la arquitectura de la Red Neuronal Convolucional (CNN) y las métricas de precisión obtenidas,te invito a consultar la documentación específica:
+
+**[Ver detalles del Entrenamiento y Modelado de la IA](./ia_entrenamiento/README.md)**
