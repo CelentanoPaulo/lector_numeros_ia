@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LectorNumerosIaApplication<lectorNumerosIA>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.lectornumeroIA.lectorNumerosIA.LectorNumerosIaApplication",
+            "projectName": "lectorNumerosIA",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+/* --- ESTILOS GLOBALES Y LOGIN (LA FACHA ORIGINAL) --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Azul noche oscuro */
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #38bdf8; /* Celeste tech */
+}
+
+p {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background: #0f172a;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.switch-text {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.switch-text span {
+    color: #38bdf8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.switch-text span:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILOS NUEVOS PARA LA PANTALLA 2 (EL LIENZO DE IA) --- */
+
+.canvas-container {
+    background-color: #000000; /* Fondo negro para que la IA lea bien el trazo blanco */
+    border: 3px solid #38bdf8;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+    touch-action: none; /* Evita que la pantalla del celu se mueva al dibujar */
+}
+
+canvas {
+    cursor: crosshair;
+    display: block;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background: #334155;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #475569;
+}
+
+.btn-primary {
+    flex-grow: 1;
+}
+
+.resultado-texto {
+    margin-top: 20px;
+    color: #f8fafc;
+    font-size: 24px;
+    min-height: 30px;
+}

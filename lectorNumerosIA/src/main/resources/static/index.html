@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Vision | Acceso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="loginCard">
+            <h2>Bienvenido de nuevo</h2>
+            <p>Ingresá para probar la IA</p>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Usuario" required>
+                <input type="password" id="loginPassword" placeholder="Contraseña" required>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p class="switch-text">¿No tenés cuenta? <span onclick="toggleForms()">Registrate acá</span></p>
+        </div>
+
+        <div class="card hidden" id="registerCard">
+            <h2>Crear Cuenta</h2>
+            <p>Unite para entrenar modelos</p>
+            <form id="registerForm">
+                <input type="text" id="regUsername" placeholder="Nuevo Usuario" required>
+                <input type="password" id="regPassword" placeholder="Tu Contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+            <p class="switch-text">¿Ya tenés cuenta? <span onclick="toggleForms()">Ingresá acá</span></p>
+        </div>
+
+        <div class="card hidden" id="appCard">
+            <h2>Dibujá un número</h2>
+            <p id="saludoUsuario">Del 0 al 9 en el recuadro</p>
+            
+            <div class="canvas-container">
+                <canvas id="lienzo" width="280" height="280"></canvas>
+            </div>
+            
+            <div class="button-group">
+                <button id="btnLimpiar" class="btn-secondary">Borrar</button>
+                <button id="btnPredecir" class="btn-primary">Adivinar</button>
+            </div>
+            
+            <h3 id="resultadoIA" class="resultado-texto"></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
