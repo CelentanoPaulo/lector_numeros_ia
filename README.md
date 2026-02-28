@@ -52,8 +52,10 @@ El mayor desafío y logro de este proyecto es la **integración** de ecosistemas
 
 ---
 
-##  Documentación del Módulo de IA
+---
 
-Para profundizar en los detalles técnicos de la fase de Ciencia de Datos, el preprocesamiento del dataset MNIST, la arquitectura de la Red Neuronal Convolucional (CNN) y las métricas de precisión obtenidas,te invito a consultar la documentación específica:
+## Documentación del Módulo de IA
 
-**[Ver detalles del Entrenamiento y Modelado de la IA](./ia_entrenamiento/README.md)**
+Para profundizar en los detalles técnicos de la fase de Ciencia de Datos, el preprocesamiento del dataset MNIST, la arquitectura de la Red Neuronal Convolucional (CNN) y las métricas de precisión obtenidas, te invito a consultar la documentación específica:
+
+**[Ver detalles del Entrenamiento y Modelado de la IA](https://github.com/CelentanoPaulo/lector_numeros_ia/tree/main/lectorNumerosIA/ia_entrenamiento)**
