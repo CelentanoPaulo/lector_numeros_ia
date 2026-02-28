@@ -1,8 +1,8 @@
-# 🧠 Módulo de Entrenamiento de IA (Reconocimiento de Dígitos)
+#  Módulo de Entrenamiento de IA (Reconocimiento de Dígitos)
 
 Este directorio contiene el entorno de experimentación y la lógica de Ciencia de Datos utilizada para entrenar la Inteligencia Artificial del sistema.
 
-## 🔬 Proceso y Metodología
+##  Proceso y Metodología
 
 El desarrollo del modelo se realizó mediante un enfoque de Deep Learning, utilizando Python y TensorFlow.
 
@@ -13,7 +13,7 @@ El desarrollo del modelo se realizó mediante un enfoque de Deep Learning, utili
   * Capas `Dense` (totalmente conectadas) para la clasificación final mediante la función de activación Softmax.
 * **Entrenamiento (Notebook):** El archivo `prueba_gpu.ipynb` contiene el código paso a paso del entrenamiento, optimizado para correr con aceleración gráfica (GPU).
 
-## 📤 Resultado Final: Exportación
+## Resultado Final: Exportación
 
 Tras el entrenamiento, el modelo alcanzó un alto nivel de precisión en la predicción de trazos nuevos. 
 
