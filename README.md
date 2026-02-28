@@ -1,36 +1,36 @@
-# 🖋️ Lector de Números con IA - Full-Stack System
+#  Lector de Números con IA - Full-Stack 
 
 Un sistema integral que combina Inteligencia Artificial, un Backend robusto y una interfaz web interactiva para reconocer números escritos a mano en tiempo real. 
 
 ---
 
-## 🏗️ Arquitectura e Integración del Sistema
+##  Arquitectura e Integración del Sistema
 
 El mayor desafío y logro de este proyecto es la **integración** de ecosistemas distintos. El sistema se divide en cuatro pilares que interactúan de forma fluida:
 
-### 1. Frontend (La Interfaz del Usuario)
+###  Frontend 
 * **Tecnologías:** HTML5 Canvas, CSS3, Vanilla JavaScript, Bootstrap.
 * **Rol:** Interacción y preprocesamiento de datos.
 * **Integración:** Cuando el usuario dibuja en el lienzo de 280x280 píxeles, JavaScript captura el trazo. Antes de enviarlo, escala internamente el dibujo a 28x28 píxeles, normaliza los colores a valores flotantes (entre 0 y 1) y convierte la matriz bidimensional en un array unidimensional. Este array se envía mediante una petición HTTP POST al servidor.
 
-### 2. Backend (El Orquestador)
+### Backend 
 * **Tecnologías:** Java 17, Spring Boot, Maven, DeepLearning4J.
 * **Rol:** Motor principal y puente tecnológico.
 * **Integración:** Expone una API REST que recibe los datos normalizados del Frontend. Su tarea más crítica es la interoperabilidad: utiliza la librería **DeepLearning4J** para importar el modelo matemático (`.h5`) generado en Python. Esto permite ejecutar la inferencia de la IA directamente dentro de la Java Virtual Machine (JVM), logrando predicciones ultra rápidas sin depender de un servidor Python externo.
 
-### 3. Base de Datos (La Persistencia)
+### Base de Datos 
 * **Tecnologías:** PostgreSQL, Spring Data JPA / Hibernate.
 * **Rol:** Almacenamiento seguro y relacional.
 * **Integración:** Conectada directamente al core de Spring Boot. Se encarga de la gestión de identidades (usuarios), validación de sesiones y almacenamiento del historial de consultas. Cada vez que la IA realiza una predicción, el Backend registra el evento en la base de datos para mantener la trazabilidad.
 
-### 4. Inteligencia Artificial (El Cerebro)
+### Inteligencia Artificial 
 * **Tecnologías:** Python, TensorFlow, Keras.
 * **Rol:** Modelado matemático y reconocimiento de patrones.
-* **Integración:** Ubicado en la carpeta `/ia-training`, este módulo representa la fase de Ciencia de Datos. Se diseñó y entrenó una Red Neuronal Convolucional (CNN) utilizando el dataset MNIST. El resultado del aprendizaje se empaquetó y exportó como un archivo de pesos estáticos, listo para ser consumido por el Backend de Java.
+* **Integración:** Ubicado en la carpeta `/ia_entrenamiento`, este módulo representa la fase de Ciencia de Datos. Se diseñó y entrenó una Red Neuronal Convolucional (CNN) utilizando el dataset MNIST. El resultado del aprendizaje se empaquetó y exportó como un archivo de pesos estáticos, listo para ser consumido por el Backend de Java.
 
 ---
 
-## 🚀 Flujo de Ejecución en Tiempo Real
+## Flujo de Ejecución en Tiempo Real
 
 1. El usuario inicia sesión (validado contra PostgreSQL).
 2. Dibuja un dígito en el Canvas del navegador.
@@ -42,7 +42,7 @@ El mayor desafío y logro de este proyecto es la **integración** de ecosistemas
 
 ---
 
-## 🛠️ Stack Tecnológico Resumido
+## Stack Tecnológico Resumido
 
 * **Ciencia de Datos:** Python 3, TensorFlow, Keras, NumPy.
 * **Desarrollo Backend:** Java 17, Spring Boot 3, Spring Security, Hibernate.
